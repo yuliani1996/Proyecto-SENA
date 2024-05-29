@@ -1,0 +1,526 @@
+/* General Styles */
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/* Estilos header y navbar */
+header {
+    border-radius: 0 0 50px 50px;
+    background-color: #e6f2ff;
+    height: 250px;
+    position: relative;
+}
+
+/* Estilos barra de navegacion */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    margin: 8px 8px 0;
+    filter: contrast(150%);
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items li a {
+    color: #000000;
+    font-size: 18px;
+}
+
+.nav-items li a:hover {
+    background-color: #af0909;
+    color: #fff;
+}
+
+.nav-buttons .btn {
+    background-color: #af0909;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Estilos formulario */
+.container__form__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.container__form {
+    max-width: 1250px;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 16%;
+    padding-bottom: 9px;
+}
+
+.input__box label {
+    color: #000;
+    font-size: 20px;
+}
+
+.input__box input {
+    height: 30px;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.form_submit_btn {
+    text-align: right;
+}
+
+.form_submit_btn input {
+    width: 13%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #af0909;
+}
+
+.header {
+    background-color: #99ddff !important;
+}
+
+.main__info h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 200px;
+    color: #fff;
+    filter: contrast(150%);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1280px;
+    background-color: #fff;
+    padding: 8px;
+    margin: 30px 30px 0;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+
+.title__form {
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+.form__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.input__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 16%;
+    padding-bottom: 5px;
+}
+
+.input__box label {
+    color: #000;
+    font-size: 20px;
+}
+
+.input__box input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.form_submit_btn {
+    text-align: right;
+}
+
+.form_submit_btn input {
+    width: 15%;
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #af0909;
+}
+
+
+/* Estilos de main card promocional */
+.container__promo {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto 30px;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card__promo {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card__promo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+.card__promo__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.card__promo__content h2, .card__promo__content h3 {
+    margin: 10px 0;
+}
+
+.card__promo__content .btn {
+    display: inline-block;
+    background-color: #af0909;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card__promo__content .btn:hover {
+    background-color: #870707;
+}
+
+/* Contenido */
+.container__destinos, .container__destinos2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card, .card2 {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 250px; /* Ajustamos el ancho de las tarjetas */
+}
+
+.card img, .card2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content, .card-content2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-content2 {
+    background-color: #fff;
+}
+
+.card-content h2, .card-content2 h2 {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+}
+
+.card-content2 h2 {
+    color: #af0909;
+    font-weight: 100;
+}
+
+.card-content2 h3 {
+    font-size: 15px;
+    color: #000;
+    font-weight: 100;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+main a {
+    display: flex;
+    flex-direction: row-reverse;
+    color: #af0909;
+    font-size: 20px;
+    margin: 30px 60px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+main h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 70px;
+}
+
+/* Adding margin-bottom to main content */
+main {
+    margin-bottom: 50px; /* Adjust this value as needed */
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////7*/
+
+@media (max-width: 900px) {
+    header{
+        height: 420px;
+    }
+
+    .nav-buttons {
+        margin: 20px;
+    }
+    
+    .logo img {
+        margin: 20px;
+    }
+
+    .input__box {
+        width: 48%;
+    }
+
+    .form_submit_btn input {
+        width: 100%;
+    }
+
+    .grid__tittle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .links-a a {
+        margin: 20px 0;
+    }
+
+    .container__destinos, .container__destinos2 {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .card, .card2{
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .container__promo{
+        width: 80%;
+    }
+
+}
+
+/* Smartphones y dispositivos pequeños */
+@media (max-width: 768px) {
+    header{
+        height: 500px;
+    }
+    
+    /*Estilos barra de navegacion*/
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-items {
+        display: flex ; 
+    }
+
+    .nav-buttons {
+        display: none; 
+    }
+
+    /*formulario*/
+
+    .form_submit_btn {
+        text-align: center;
+        margin: 15px 15px;
+    }
+
+    .container__form{
+        margin: 10px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+
+
+    /*contenido  main*/
+
+    .container__promo{
+        margin: 20px;
+    }
+
+    .container__destinos, .container__destinos2 {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-container  {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .footer-column {
+        margin: 0 auto;
+    }
+}
+
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .header{
+        height: 600px;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .navbar-container {
+        padding: 10px;
+    }
+
+    .nav-items li a {
+        font-size: 16px;
+    }
+
+    .form_submit_btn input {
+        font-size: 18px;
+    }
+
+    .card {
+        height: 150px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        padding: 10px 0;
+    }
+}

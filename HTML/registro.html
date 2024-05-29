@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/CSS/registro.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="/HTML/index.html">
+                    <img src="/IMG/logo_aeropuerto.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="nav-buttons">
+                    <a href="/HTML/login.html" class="btn">Iniciar Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Contenido formulario de resgitro-->
+    <main>
+        <div class="container__form">
+            <form class="registro__form">
+                <h1>Crea tu cuenta</h1>
+                <p>Si ya eres parte de Andina, no necesitas crear una cuenta nueva. Inicia sesión con tus datos de siempre.</p>
+                <h2>Datos Personales</h2>
+                <p>Ingresa tus datos tal como aparecen en tu documento de identidad. Los usaremos cuando compres tus pasajes.</p>
+
+                <div class="input__form">
+                    <label for="country">Seleccionar país:</label>
+                    <select id="country" name="country">
+                        <option value="">Seleccione un país</option>
+                        <option value="argentina" data-flag="ar">Argentina</option>
+                        <option value="bolivia" data-flag="bo">Bolivia</option>
+                        <option value="brazil" data-flag="br">Brasil</option>
+                        <option value="chile" data-flag="cl">Chile</option>
+                        <option value="colombia" data-flag="co">Colombia</option>
+                        <option value="ecuador" data-flag="ec">Ecuador</option>
+                        <option value="paraguay" data-flag="py">Paraguay</option>
+                        <option value="peru" data-flag="pe">Perú</option>
+                        <option value="uruguay" data-flag="uy">Uruguay</option>
+                        <option value="venezuela" data-flag="ve">Venezuela</option>
+                    </select>
+                </div>
+
+                <div class="input__form">
+                    <label for="document">Tipo de documento:</label>
+                    <select id="document" name="document">
+                        <option value="">Seleccione el tipo de docuemtno</option>
+                        <option value="Cedula" >Cedula de ciudadania</option>
+                        <option value="Cedula extranjera">Cedula de extranjeria</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+
+                <div class="input__form">
+                    <label>Numero de documento</label>
+                    <input type="text" id="numero-documento" name="numero-documento" placeholder="Numero de documento" required>
+                    <p id="nota">Ingresa tu número de cédula de ciudadanía. Ejemplo: 1234567891</p>
+                </div>
+
+                <div class="input__form">
+                    <label>Nombres</label>
+                    <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                    <p id="nota">Tal como aparece en tu cédula de ciudadanía</p>
+                </div>
+
+                <div class="input__form">
+                    <label>Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                    <p id="nota">Tal como aparece en tu cédula de ciudadanía</p>
+                </div>
+
+                <div class="input__form">
+                    <label>Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" placeholder="Fecha de nacimiento" required>
+                    <p id="nota">Ingresa tu fecha de nacimiento con el formato dd/mm/aaaa</p>
+                </div>
+
+                <div class="input__radio">
+                    <fieldset>
+                        <legend>Seleccione su género:</legend>
+                        <div>
+                            <label for="genero_masculino">
+                                <input type="radio" id="genero_masculino" name="genero" value="masculino">Masculino</label>
+                        </div>
+                        <div>
+                            <label for="genero_femenino">
+                                <input type="radio" id="genero_femenino" name="genero" value="femenino">Femenino</label>
+                        </div>
+                        <div>
+                            <label for="genero_no_binario">
+                                <input type="radio" id="genero_no_binario" name="genero" value="no_binario">Prefiero no decirlo</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <h3>Numero de telefono</h3>
+                <div class="input__form__tel">
+                    <select id="codigo_pais" name="codigo_pais">
+                        <option value="+1">+1 (Estados Unidos)</option>
+                        <option value="+52">+52 (México)</option>
+                        <option value="+34">+34 (España)</option>
+                        <option value="+54">+54 (Argentina)</option>
+                        <option value="+54">+57 (Colombia)</option>
+                        <!-- Agrega más opciones según sea necesario -->
+                    </select>
+                    <input type="tel" id="numero_telefono" name="numero_telefono" placeholder="Número de teléfono" required>
+                </div>
+
+                <h2>Datos de ingreso a tu cuenta</h2>
+
+                <div class="input__form">
+                    <input type="email" id="email-registro" name="email" placeholder="Ingrese su correo electronico ejemplo@hotmail.com">
+                </div>
+
+                <div class="input__form">
+                    <input type="password" id="password-registro" name="password-registro" placeholder="Contrasena">
+                </div>
+
+                <div class="input__form">
+                    <input type="password" id="password-registro" name="password-registro" placeholder="Repetir contraseña">
+                </div>
+                
+
+                <fieldset>
+                    <legend>Acepta nuestros términos y política de privacidad:</legend>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">Acepto la política de privacidad</label>
+                    </div>
+                </fieldset>
+
+                <div class="btn__form__cuenta">
+                    <button>Crear cuenta</button> 
+                </div>
+            </form>
+        </div>
+    </main> 
+    <footer>
+        <p>Protegido por reCAPTCHA y se aplica a las <a href="#">Políticas de Privacidad </a>y a los <a href="#">Términos de Servicio de Google</a>.</p>
+    </footer>
+</body>
+</html>

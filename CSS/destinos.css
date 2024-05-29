@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+    font-family:  Tahoma, sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilos header y navbar */
+
+
+
+header{
+    border-radius: 0 0 50px 50px;
+    background-image: url(/IMG/destinos-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 70px ;
+    margin-top: 25px  ;
+    margin-bottom: 0;
+    color: #fff;
+    filter: contrast(160%);
+}
+
+h2{
+    text-align: center;
+    font-size: 30px ;
+    color: #fff;
+    filter: contrast(150%);
+}
+
+/*Estilos barra de navegacion*/
+
+.navbar-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    margin: 8px 8px 0;
+    filter: contrast(150%);
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items li a {
+    color: #000000;
+    font-size: 18px;
+}
+
+.nav-items li a:hover {
+    background-color: #af0909;
+    color: #fff;
+}
+
+.nav-buttons .btn {
+    background-color: #af0909;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/*Estilos formulario*/
+
+
+.container__form__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.container__form{
+    max-width: 1250px;
+    background-color: rgb(255, 255, 255, 0.55);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+.form__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.input__box{
+    display: flex;
+    flex-wrap: wrap ;
+    width: 16%;
+    padding-bottom: 9px;
+}
+
+.input__box label{
+    color: #000;
+    font-size: 20px;
+}
+
+.input__box input{
+    height: 30px;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #ccc
+}
+
+.form_submit_btn{
+    text-align: right;
+
+}
+
+.form_submit_btn input{
+    width: 13%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #af0909;
+
+}
+
+
+/*Estilos para el main y su contenido*/
+
+/*titulo*/
+
+.grid__tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px ;
+    border-bottom: 1px solid #ccccccb4;
+}
+
+.grid__tittle h2{
+    color: #000;
+    font-size: 20px;
+    margin-left: 50px;
+    font-weight: 100;
+}
+
+.links a{
+    color: #af0909;
+    font-size: 20px;
+    margin: 0 10px;
+
+}
+.links a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+h3{
+    color: #000;
+    font-size: 30px;
+    margin: 150px 60px 3%
+    ;
+    font-weight: 100; 
+}
+
+/*Estilos de grilla*/
+
+.container__destinos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 200px;
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.card-content{
+    height: 20%;
+}
+.card h2 {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px;
+    
+}
+
+.links-a a{
+    display: flex;
+    flex-direction: row-reverse;
+    color: #af0909;
+    font-size: 20px;
+    margin: 30px 60px;
+}
+
+.links-a a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+
+
+/*Estilos del footer*/
+
+footer{
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.footer-column h3 {
+    font-size: 20px;
+    color: #af0909;
+    margin: 50px 50px 0;
+    filter: contrast(200%);
+}
+
+.footer-column ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.footer-column ul li {
+    color: #888484f6;
+    padding: 5px 10px;
+    font-weight: none;
+}
+
+.footer-column ul li:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.footer__final{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+

@@ -1,0 +1,195 @@
+/* Media Queries para Responsividad */
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 1024px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    
+
+    .input__box {
+        width: 48%;
+    }
+
+    .form_submit_btn input {
+        width: 100%;
+    }
+
+    .grid__tittle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container__destinos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .links-a a {
+        margin: 20px 0;
+    }
+}
+
+/* Smartphones y dispositivos pequeños */
+@media (max-width: 768px) {
+
+    header{
+        height: 450px;
+    }
+    
+    h1{
+        display: none;
+    }
+    
+    
+    /*Estilos barra de navegacion*/
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+    }
+
+
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .nav-items {
+        display: none; 
+    }
+
+    .nav-buttons {
+        display: flex; 
+    }
+
+    .nav-buttons .btn {
+        background-color: #af0909;
+        color: white;
+        padding: 5px 6px;
+        border-radius: 5px;
+        margin: 0 20px 0 0; 
+    }
+
+    /*formulario*/
+
+    .form_submit_btn {
+        text-align: center;
+        margin: 15px 15px;
+    }
+
+    .container__form{
+        margin: 10px;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+
+
+    .grid__tittle {
+        display: flex;
+        justify-content: center; 
+        text-align: center; 
+        margin: 80px 0 ;
+        
+    }
+
+    .grid__tittle h2{
+        margin: 0 auto;
+        font-weight: 700;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center; 
+        font-size: 15px;
+        margin: 20px 0; 
+    }
+
+    /*contenido  main*/
+    h3{
+        display: flex;
+        justify-content: center; 
+        text-align: center; 
+        margin: 30px 0 ;
+    }
+
+    .container__destinos {
+        margin: 0 20px;
+    }
+
+    .links-a a {
+        font-size: 15px;
+        margin: 30px 30px;
+    }
+
+    .footer-container  {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .footer-column {
+        margin: 0 auto;
+    }
+}
+
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .navbar-container {
+        padding: 10px;
+    }
+
+    .nav-items li a {
+        font-size: 16px;
+    }
+
+    .form_submit_btn input {
+        font-size: 18px;
+    }
+
+    .card {
+        height: 150px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        padding: 10px 0;
+    }
+}

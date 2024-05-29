@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeropuerto Andino</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="/HTML/index.html">
+                        <img src="/IMG/logo_aeropuerto.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="nav-items">
+                    <li><a href="/HTML/destinos.html">Destinos</a></li>
+                    <li><a href="/HTML/ofertas.html">Ofertas</a></li>
+                    <li><a href="/HTML/reservas.html">Reserva</a></li>
+                    <li><a href="/HTML/contacto.html">Contactanos</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="/HTML/login.html" class="btn">Iniciar Sesión</a>
+                    <a href="/HTML/registro.html" class="btn">Registrarse</a>
+                </div>
+            </div>   
+        </nav>
+        <div class="container__form__header">
+            <div class="container__form">
+                <form action="#">
+                    <div class="form__info">
+                        <div class="input__box">
+                            <label for="Origen">Origen</label>
+                            <input type="text" id="Origen" name="Origen" placeholder="Selecciona el origen">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="Destino">Destino</label>
+                        <input type="text" id="Destino" name="Destino" placeholder="Selecciona el destino">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="fecha_salida">Fecha salida</label>
+                        <input type="date" id="fecha_salida" name="fecha_salida">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="fecha_regreso">Fecha regreso</label>
+                        <input type="date" id="fecha_regreso" name="fecha_regreso">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="pasajeros_adultos">Pasajeros</label>
+                        <input type="number" id="pasajeros_adultos" name="pasajeros_adultos" placeholder="Adultos">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="pasajeros_Ninos">Pasajeros</label>
+                        <input type="number" id="pasajeros_Ninos" name="pasajeros_Ninos" placeholder="Niños">
+                        </div>
+                    </div>
+                    <div class="form_submit_btn">
+                        <input type="submit" value="Buscar">
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- Contenido Principal -->
+    <main>
+        <div class="container__promo">
+            <div class="card__promo">
+                <img src="/IMG/noche.jpg" alt="foto-medellin">
+                <div class="card__promo__content">
+                    <h2>¡Super ofertas nocturnas!</h2>
+                    <h2>Reserva hasta las 8:00 del 29 de mayo y vuela durante junio 2024</h2>
+                    <h2>Por trayectos desde</h2>
+                    <h3>COP 59.100</h3>
+                    <a href="#" class="btn">Compra ya</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container__destinos">
+            <a href="#" class="card">
+                <img src="/IMG/medellin-card.jpg" alt="foto-medellin">
+                <div class="card-content">
+                    <h2>Medellin COP 70.990</h2>
+                </div>
+            </a>
+
+            <a href="#" class="card">
+                <img src="/IMG/cartagena-card.jpg" alt="foto-cartagena">
+                <div class="card-content">
+                    <h2>Cartagena COP 89.990</h2>
+                </div>
+            </a>
+
+            <a href="#" class="card">
+                <img src="/IMG/bogota-card.jpg" alt="foto-bogota">
+                <div class="card-content">
+                    <h2>Bogota COP 59.990</h2>
+                </div>
+            </a>
+        </div>
+        
+        <a href="/HTML/ofertas.html">Descubrir más ofertas</a>
+        
+        <h1>Vuela como más te gusta</h1>
+        
+        <div class="container__destinos2">
+            <a href="#" class="card2">
+                <img src="/IMG/inspirate.card.jpg" alt="chica en bote">
+                <div class="card-content2">
+                    <h2>Inspirate</h2>
+                    <h3>Explora nuestros destinos y planea tu próxima aventura. Sácale provecho a tu siguiente vuelo</h3>
+                </div>
+            </a>
+
+            <a href="#" class="card2">
+                <img src="/IMG/experiencia-card.jpg" alt="fondo avion">
+                <div class="card-content2">
+                    <h2>Experiencia Andino</h2>
+                    <h3>¡Listo para despegar! Descubre los servicios a bordo que te ofrecemos al volar con nosotros.</h3>
+                </div>
+            </a>
+
+            <a href="#" class="card2">
+                <img src="/IMG/acumulamillas.jpg" alt="chicas viajando">
+                <div class="card-content2">
+                    <h2>Andino millas</h2>
+                    <h3>Conoce nuestro programa de viajero frecuente y acumula millas con tus vuelos.</h3>
+                </div>
+            </a>
+        </div>
+        
+        <h1>Prepárate para viajar</h1>
+        
+        <div class="container__destinos2">
+            <a href="#" class="card2">
+                <img src="/IMG/check.jpg" alt="check online">
+                <div class="card-content2">
+                    <h2>Check-online</h2>
+                    <h3>¡Ahora solo deberás preocuparte de disfrutar tu destino!</h3>
+                </div>
+            </a>
+
+            <a href="#" class="card2">
+                <img src="/IMG/HelpCenter.jpg" alt="centro de ayuda">
+                <div class="card-content2">
+                    <h2>Centro de ayuda</h2>
+                    <h3>Cuéntanos qué necesitas y te ayudaremos lo más pronto posible.</h3>
+                </div>
+            </a>
+
+            <a href="#" class="card2">
+                <img src="/IMG/requisitos.jpg" alt="requisitos para viajar">
+                <div class="card-content2">
+                    <h2>Requisitos para viajar</h2>
+                    <h3>Revisa con anticipación la documentación necesaria para tu viaje y evita imprevistos.</h3>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <a href=""><li>Somos Andino</li></a>
+                    <a href=""><li>Experiencia Andino</li></a>
+                    <a href=""><li>Noticias Coporativas</li></a>
+                    <a href=""><li>Sostenibilidad</li></a>
+                    <a href=""><li>Accesibilidad</li></a>
+                    <a href=""><li>Trabaja con nosotros</li></a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Información legal</h3>
+                <ul>
+                    <a href=""><li>Politicas de privacidad y seguridad</li></a>
+                    <a href=""><li>Terminos de uso </li></a>
+                    <a href=""><li>Conoce tus derechos y deberes</li></a>
+                    <a href=""><li>Tasas cargos e impuetos </li></a>
+                    <a href=""><li>Politica de tratamiento de datos</li></a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contactos</h3>
+                <ul>
+                    <a href=""><li>Linea nacional: 3102640043</li></a>
+                    <a href=""><li>Whatsapp asistente: 3102640043</li></a>
+                    <a href=""><li>AeropuertoAndino@gmail.com</li></a>
+                    <a href=""><li>y.uliana895@hotmail.com</li></a>
+                    <a href=""><li>Centro de ayuda PQRS</li></a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Siguenos</h3>
+                <ul>
+                    <a href=""><li><img src="/IMG/logos redes/icon-facebook.png" alt="Logo-facebook"><img src="/IMG/logos redes/icons8-tik-tok-48.png" alt="Logo-tiktok"><img src="/IMG/logos redes/icons8-instagram-48.png" alt="Logo-instagram"></li></a>
+                    <a href=""><li><img src="/IMG/logos redes/icons8-twitter-48.png" alt="logo-twitter"><img src="/IMG/logos redes/icons8-linkedin-rodeado-de-círculo-48.png" alt="logo-linkdein"><img src="/IMG/logos redes/icons8-youtube-48.png" alt="logo-youtube"></li></a>
+                    
+                </ul>
+            </div>
+        </div>
+        <footer class="footer__final">
+            <p>Protegido por reCAPTCHA y se aplica a las <a href="#">Políticas de Privacidad </a>y a los <a href="#">Términos de Servicio de Google</a>.</p>
+        </footer>
+    </footer>
+
+</body>
+</html>

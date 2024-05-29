@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/destinos.css">
+    <link rel="stylesheet" href="/CSS/@media.css">
+    <title>Destinos</title>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="/HTML/index.html">
+                        <img src="/IMG/logo_aeropuerto.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="nav-items">
+                    <li><a href="/HTML/ofertas.html">Ofertas</a></li>
+                    <li><a href="/HTML/reservas.html">Reservas</a></li>
+                    <li><a href="/HTML/contacto.html">Contactanos</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="/HTML/login.html" class="btn">Iniciar Sesión</a>
+                    <a href="/HTML/registro.html" class="btn">Registrarse</a>
+                </div>
+            </div>
+            <h1>Destinos</h1>
+            <h2>¡Comienza tu próxima aventura!</h2>
+        </nav>
+        <div class="container__form__header">
+            <div class="container__form">
+                <form action="#">
+                    <div class="form__info">
+                        <div class="input__box">
+                            <label for="Origen">Origen</label>
+                            <input type="text" id="Origen" name="Origen" placeholder="Selecciona el origen">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="Destino">Destino</label>
+                        <input type="text" id="Destino" name="Destino" placeholder="Selecciona el destino">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="fecha_salida">Fecha salida</label>
+                        <input type="date" id="fecha_salida" name="fecha_salida">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="fecha_regreso">Fecha regreso</label>
+                        <input type="date" id="fecha_regreso" name="fecha_regreso">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="pasajeros_adultos">Pasajeros</label>
+                        <input type="number" id="pasajeros_adultos" name="pasajeros_adultos" placeholder="Adultos">
+                        </div>
+        
+                        <div class="input__box">
+                        <label for="pasajeros_Ninos">Pasajeros</label>
+                        <input type="number" id="pasajeros_Ninos" name="pasajeros_Ninos" placeholder="Niños">
+                        </div>
+                    </div>
+                    <div class="form_submit_btn">
+                        <input type="submit" value="Buscar">
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid__tittle">
+            <h2>¡Explora el mundo! encuentra tu próximo destino con nosotros.</h2>
+            <div class="links">
+            <a href="#destinos-n">Destinos Nacionales</a>
+            <a href="#destinos-in">Destinos Internacionales</a>
+            </div>
+        </div>
+        <h3 id="destinos-n">Destinos en Colombia</h3>
+        <div class="container__destinos">
+            <div class="card">
+                <img src="/IMG/medellin-card.jpg" alt="foto-medellin">
+                <div class="card-content">
+                <h2>Medellin</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/cartagena-card.jpg" alt="foto-cartagena">
+                <div class="card-content">
+                    <h2>Cartagena</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/barranquilla-card.jpg" alt="foto-barranquilla">
+                <div class="card-content">
+                    <h2>Barranquilla</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/bogota-card.jpg" alt="foto-bogota">
+                <div class="card-content">
+                    <h2>Bogota</h2>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="/IMG/cali.jpg" alt="foto-cali">
+                <div class="card-content">
+                    <h2>Cali</h2>
+                </div>
+            </div>
+        
+            
+        
+            <div class="card">
+                <img src="/IMG/bucaramanga.jpg" alt="foto-bucaramanga">
+                <div class="card-content">
+                    <h2>Bucaramanga</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/inpiales-card.jpg" alt="foto-ipiales">
+                <div class="card-content">
+                    <h2>Ipiales</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/pereira-card.jpg" alt="foto-pereira">
+                <div class="card-content">
+                    <h2>Pereira</h2>
+                </div>
+            </div>
+        
+            
+        
+            <div class="card">
+                <img src="/IMG/armenia-card.jpg" alt="foto-armenia">
+                <div class="card-content">
+                    <h2>Armenia</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/monteria-card.jpg" alt="foto-monteria">
+                <div class="card-content">
+                    <h2>Monteria</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/pasto-card.jpg" alt="foto-pasto">
+                <div class="card-content">
+                    <h2>Pasto</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/yopal-card.jpg" alt="foto-bolsos-yopal">
+                <div class="card-content">
+                    <h2>Yopal</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/cucuta-card.jpg" alt="foto-cucuta">
+                <div class="card-content">
+                    <h2>Cucuta</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/neiva-card.jpg" alt="Neiva">
+                <div class="card-content">
+                    <h2>Neiva</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/leticia-card.jpg" alt="foto-leticia">
+                <div class="card-content">
+                    <h2>Leticia</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/sanandres-card.jpg" alt="foto-sanandres">
+                <div class="card-content">
+                    <h2>San Andres Isla </h2>
+                </div>
+            </div>
+        </div>
+        <h3 id="destinos-in">Destinos Internacionales</h3>
+        <div class="container__destinos">
+            <div class="card">
+                <img src="/IMG/newyork.card.jpg" alt="foto-new york">
+                <div class="card-content">
+                <h2>New York</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/miami-card.jpg" alt="foto-miami">
+                <div class="card-content">
+                    <h2>Miami</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/lasvegas-card.jpg" alt="foto-las vegas">
+                <div class="card-content">
+                    <h2>Las Vegas</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/whasignto-card.jpg" alt="foto-whasignton">
+                <div class="card-content">
+                    <h2>Washington</h2>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="/IMG/montreal-card.jpg" alt="foto-montreal">
+                <div class="card-content">
+                    <h2>Montreal</h2>
+                </div>
+            </div>
+        
+            
+        
+            <div class="card">
+                <img src="/IMG/toronto-card.jpg" alt="foto-toronto">
+                <div class="card-content">
+                    <h2>Toronto</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/barcelona-card.jpg" alt="foto-barcelona">
+                <div class="card-content">
+                    <h2>Barcelona</h2>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="/IMG/madrid-card.jpg" alt="foto-madrid">
+                <div class="card-content">
+                    <h2>Madrid</h2>
+                </div>
+            </div>
+        
+            
+            <div class="card">
+                <img src="/IMG/mexico-card.jpg" alt="foto-mexico">
+                <div class="card-content">
+                    <h2>Ciudad de México</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/cancun-card.jpg" alt="foto-cancun">
+                <div class="card-content">
+                    <h2>Cancún</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/lima-card.jpg" alt="foto-lima">
+                <div class="card-content">
+                    <h2>Lima</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/cusco-card.jpg" alt="foto-cusco">
+                <div class="card-content">
+                    <h2>Cusco</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/punta-cana.jpg" alt="foto-punta cana">
+                <div class="card-content">
+                    <h2>Punta cana </h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/santodomingo-card.jpg" alt="foto-santodomingo">
+                <div class="card-content">
+                    <h2>Santo Domingo</h2>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="/IMG/quito-card.jpg" alt="foto-quito">
+                <div class="card-content">
+                    <h2>Quito</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/cuenca-card.jpg" alt="foto-cuenca">
+                <div class="card-content">
+                    <h2>Cuenca</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/riodejaneiro-card.jpg" alt="foto-rio de janeiro">
+                <div class="card-content">
+                    <h2>Rio de Janeiro</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/saopaulo-card.jpg" alt="foto-saopaulo">
+                <div class="card-content">
+                    <h2>Sao Paulo</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/aruba.jpg" alt="foto-aruba">
+                <div class="card-content">
+                    <h2>Aruba</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/IMG/curazao-card.jpg" alt="foto-curazao">
+                <div class="card-content">
+                    <h2>Curazao</h2>
+                </div>
+            </div>
+        </div>
+        <div class="links-a">
+            <a href="#destinos-n">Destinos Nacionales</a>
+        </div>   
+    </main>
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <a href=""><li>Somos Andino</li></a>
+                    <a href=""><li>Experiencia Andino</li></a>
+                    <a href=""><li>Noticias Coporativas</li></a>
+                    <a href=""><li>Sostenibilidad</li></a>
+                    <a href=""><li>Accesibilidad</li></a>
+                    <a href=""><li>Trabaja con nosotros</li></a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Información legal</h3>
+                <ul>
+                    <a href=""><li>Politicas de privacidad y seguridad</li></a>
+                    <a href=""><li>Terminos de uso </li></a>
+                    <a href=""><li>Conoce tus derechos y deberes</li></a>
+                    <a href=""><li>Tasas cargos e impuetos </li></a>
+                    <a href=""><li>Politica de tratamiento de datos</li></a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contactos</h3>
+                <ul>
+                    <a href=""><li>Linea nacional: 3102640043</li></a>
+                    <a href=""><li>Whatsapp asistente: 3102640043</li></a>
+                    <a href=""><li>AeropuertoAndino@gmail.com</li></a>
+                    <a href=""><li>y.uliana895@hotmail.com</li></a>
+                    <a href=""><li>Centro de ayuda PQRS</li></a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Siguenos</h3>
+                <ul>
+                    <a href=""><li><img src="/IMG/logos redes/icon-facebook.png" alt="Logo-facebook"><img src="/IMG/logos redes/icons8-tik-tok-48.png" alt="Logo-tiktok"><img src="/IMG/logos redes/icons8-instagram-48.png" alt="Logo-instagram"></li></a>
+                    <a href=""><li><img src="/IMG/logos redes/icons8-twitter-48.png" alt="logo-twitter"><img src="/IMG/logos redes/icons8-linkedin-rodeado-de-círculo-48.png" alt="logo-linkdein"><img src="/IMG/logos redes/icons8-youtube-48.png" alt="logo-youtube"></li></a>
+                    
+                </ul>
+            </div>
+        </div>
+        <footer class="footer__final">
+            <p>Protegido por reCAPTCHA y se aplica a las <a href="#">Políticas de Privacidad </a>y a los <a href="#">Términos de Servicio de Google</a>.</p>
+        </footer>
+    </footer>
+
+    
+</body>
+</html>

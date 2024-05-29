@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/registro.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="/HTML/index.html">
+                    <img src="/IMG/logo_aeropuerto.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="nav-buttons">
+                    <a href="/HTML/login.html" class="btn">Iniciar Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Contenido formulario de resgitro-->
+    <main>
+        <div class="container__form">
+            <form class="registro__form">
+                <h1>Contactanos</h1>
+                <h2>Estimado cliente</h2>
+                <p>Su mensaje es muy importante para nosotros. Agradecemos su comunicación y le responderemos a la mayor brevedad posible.</p>
+
+                <div class="input__form">
+                    <label for="document">Tipo de documento:</label>
+                    <select id="document" name="document">
+                        <option value="">Seleccione el tipo de docuemtno</option>
+                        <option value="Cedula" >Cedula de ciudadania</option>
+                        <option value="Cedula extranjera">Cedula de extranjeria</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+
+                <div class="input__form">
+                    <label>Numero de documento</label>
+                    <input type="text" id="numero-documento" name="numero-documento" placeholder="Numero de documento" required>
+                    <p id="nota">Ingresa tu número de cédula de ciudadanía. Ejemplo: 1234567891</p>
+                </div>
+
+                <div class="input__form">
+                    <label>Nombres</label>
+                    <input type="text" id="nombres" name="nombres" placeholder="Nombres" required>
+                    <p id="nota">Tal como aparece en tu cédula de ciudadanía</p>
+                </div>
+
+                <div class="input__form">
+                    <label>Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                    <p id="nota">Tal como aparece en tu cédula de ciudadanía</p>
+                </div>
+
+                <div class="input__form">
+                    <input type="email" id="email-registro" name="email" placeholder="Ingrese su correo electronico ejemplo@hotmail.com">
+                </div>
+                <h2>Ingresa tu mensaje, quejas o reclamos <br>Nos comunicaremos con usted pronto. </h2>
+                
+                <div class="input__form">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+
+                <fieldset>
+                    <legend>Acepta nuestros términos y política de privacidad:</legend>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">Acepto la política de privacidad</label>
+                    </div>
+                </fieldset>
+
+                <div class="btn__form__cuenta">
+                    <button style="color: #fff;">Enviar</button> 
+                </div>
+            </form>
+        </div>
+    </main> 
+    <!-- Pie de Página -->
+    <footer>
+            <p>Protegido por reCAPTCHA y se aplica a las <a href="#">Políticas de Privacidad </a>y a los <a href="#">Términos de Servicio de Google</a>.</p>
+    </footer>    
+</body>
+</html>
